@@ -1,0 +1,92 @@
+/* 
+Orange Ordina color: f58220
+Blue Ordina color: 3da4bf
+Font color: #58595b
+Font family: Roboto Condensed
+*/
+* {
+    box-sizing: border-box;
+  } 
+
+/* Style font */
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url("Font/RobotoCondensed-Regular.ttf");
+}
+
+/* Style body */
+body {
+    font-family: "RobotoCondensed-Regular";
+}
+
+/* Style header */
+header {
+    background-color: #f58220;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+nav {
+    /* background: #3da4bf; */
+}
+
+article {
+    /* background-color: #cce5e9; */
+}
+
+/* Table content inside */
+.col-container {
+    display: table;
+    width: 100%;
+}
+
+/* Show content side by side inside a table*/
+.col-nav, .col-article { 
+    display: table-cell;
+    padding: 16px;
+}
+
+
+/* Style class col-nav */
+.col-nav {
+    background: #3da4bf;
+    width: 20%;
+}
+
+/* Style class col-nav */
+.col-article {
+    background-color: #cce5e9;
+    width: 80%;
+}
+
+/* Style H1 */
+h1 { 
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* Style footer */
+footer { 
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    color: #3b3b3b;
+    border-top: 1px solid #000
+}
+
+
+/* Define class to display text inline => side-by-side  */
+.inline {
+    display: inline;
+}
+
+/* Responsive style max-width 600px devices */
+@media (max-width: 600px) {
+.col-nav, .col-article {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+}

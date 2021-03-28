@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="javascript-file.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
+    <title>Test - Counting words</title>
+</head>
+
+<body>
+    <header>
+        <h2>Counting words</h2>
+    </header>
+    <div class="col-container">
+        <section>
+            <div class="col-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">CalculateHighestFrequency</a></li>
+                        <li><a href="#">CalculateFrequencyForWord</a></li>
+                        <li><a href="#">CalculateMostFrequentNWords n = 3</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-article">
+                <article>
+                    <h1>Page for <b>results</b> to display.</h1>
+                    <p>The text to be analysed:</p>
+                    <p id="displayText" onload="change_text()">-</p>
+                    <br />
+
+                    <p>After clicking a <b>button</b> the result will display on the screen and in the console.</p>
+                    <br />
+
+                    <p class="inline">1.</p>
+                    <p class="inline"><button type="button" onclick="displayCalculateHighestFrequency()">Calculate
+                            Highest Frequency Word</button>:
+                    </p>
+                    <p class="inline" id="displayCalculateHighestFrequency">answer</p>
+                    <br /> <br /> <br />
+
+
+
+                    <p class="inline">2.</p>
+                    <p class="inline">
+                        <button type="button" onclick="displayCalculateFrequencyForWord()">Calculate Frequency For
+                            Word</button>
+                    </p>
+                    "<p class="inline" id="displayWord">-</p>" is:
+                    <p class="inline" id="displayCalculateFrequencyForWord">answer</p>
+                    <br /> <br /> <br />
+
+
+                    <p class="inline">3.</p>
+                    <p class="inline">
+                        <button type="button" onclick="displayCalculateMostFrequentNWords()">Calculate Most Frequent
+                            Words N is 3</button>:
+                    </p>
+                    <p class="inline" id="displayCalculateMostFrequentNWords">answer</p> --- <b>Opdracht 3 werkt
+                        niet.</b>
+
+                </article>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
