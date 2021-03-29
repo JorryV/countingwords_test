@@ -24,7 +24,7 @@ function calculateHighestFrequency(text) {
     const textNoNumbers = textToLowercase.replace(/[^a-z ]/g, ''); //Store text where all characters other than a-z and " " are replaced by '' (blanc)
     const arrayWords = textNoNumbers.match(/\w+/g); //Seperates each word of characters /w - https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
-    console.log("1. CalculateHighestFrequency");
+    console.log("%c1. CalculateHighestFrequency", "color:green; font-weight:bold");
     //console.log(arrayWords); // ["the", "sun", "shines", "over", "the", "lake"] //Saved as an array
     const occurrences = {};  //Make an empty object (Array would store some values as NaN)
     for (const word of arrayWords) { //Loops the 'arrayWords' array, where as every single key/entry is 'word'
@@ -68,7 +68,7 @@ function calculateFrequencyForWord(text, word) {
     const wordLowercase = word.toLowerCase(); //Store word in lowercase
     const searchWord = wordLowercase.replace(/[^a-z ]/g, ''); //Store text where all characters other then a-z and " " are replaced by '' (blanc)
 
-    console.log("2. CalculateFrequencyForWord");
+    console.log("%c2. CalculateFrequencyForWord", "color:green; font-weight:bold");
     let count = 0; //Start initial count at 0, Let in stead of Const because it is incrementing its value
     for (const words of arrayWords) { //Loops the 'arrayWords' array, where as every single key/entry is 'word'
         if (words == searchWord) { //If the looped 'word' is equal to 'searchWord'...
@@ -97,7 +97,7 @@ function calculateMostFrequentNWords(text, n) {
     const textNoNumbers = textToLowercase.replace(/[^a-z ]/g, ''); //Store text where all characters other then a-z and " " are replaced by '' (blanc)
     const arrayWords = textNoNumbers.match(/\w+/g); //Seperates each word in array by: /\w+/g" - https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
-    console.log("3. CalculateMostFrequentNWords");
+    console.log("%c3. CalculateMostFrequentNWords", "color:red; font-weight:bold");
     const occurrences = {};
     for (const word of arrayWords) { //Loop the 'arrayWords' array, where every single entry is 'word'
         if (occurrences[word]) { //If the word was already seen
